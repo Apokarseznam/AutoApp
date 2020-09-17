@@ -1,6 +1,6 @@
 # AutoApp
 
-Java Spring MVC application.
+This is a Spring Boot Java app which connects to a MySQL instance running inside a Docker container
 
 ### Technologies used:
 * Maven 
