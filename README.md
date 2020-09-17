@@ -8,11 +8,10 @@ Java Spring MVC application.
 * MySQL
 * Hibernate 
 * Bootstrap 
+* Docker 
+* Docker compose 
 
 ### To get the code:
 ```shell
 $ git clone https://github.com/Apokarseznam/AutoApp.git
 ```
-### License
-
-This project is licensed under the Apache License 2.0.
