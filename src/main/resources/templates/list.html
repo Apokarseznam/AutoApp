@@ -1,0 +1,71 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+
+	<head>
+		<meta http-equiv="Content-Type"
+			content="text/html; charset=UTF-8">
+			<title>Seznam Aut</title>
+			<link rel="stylesheet"
+				href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+				<link th:href="@{/css/bootstrap.css}" rel="stylesheet" />
+	</head>
+
+	<body>
+
+		<div class="container">
+			<br>
+				<a href="add" class="btn btn-success">Nové Auto</a>
+				<br>
+					<h2>
+						<b>Seznam Aut</b>
+					</h2>
+					<div class="table-responsive">
+
+						<table class="table table-striped">
+
+							<tr>
+								<th>Číslo</th>
+								<th>Značka</th>
+								<th>Model</th>
+								<th>Barva</th>
+								<th>Výkon</th>
+								<th>Upravit</th>
+								<th>Smazat</th>
+							</tr>
+
+							<tr th:each="auto: ${autos}">
+								<td th:text="${auto.id}" />
+								<td th:text="${auto.make}" />
+								<td th:text="${auto.model}" />
+								<td th:text="${auto.colour}" />
+								<td th:text="${auto.power}" />
+								<td>
+									<a th:href="@{/update(Id=${auto.id})}">
+										<i class="material-icons" title="Upravit">&#xE254;</i>
+									</a>
+								</td>
+								<td>
+									<a th:href="@{/delete(Id=${auto.id})}">
+										<i class="material-icons" title="Smazat">&#xE872;</i>
+									</a>
+								</td>
+							</tr>
+
+						</table>
+					</div>
+		</div>
+	</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+

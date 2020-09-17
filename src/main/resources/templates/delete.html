@@ -1,0 +1,60 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+
+	<head>
+		<meta http-equiv="Content-Type"
+			content="text/html; charset=UTF-8">
+			<title>Odstranění Auta</title>
+			<link rel="stylesheet"
+				href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+				<link th:href="@{/css/bootstrap.css}" rel="stylesheet" />
+	</head>
+
+	<body>
+
+		<div class="container">
+			<br>
+				<a href="list" class="btn btn-success">Zpět</a>
+				<br>
+					<h2>
+						<b>Odstranění Auta</b>
+					</h2>
+
+					<div class="table-responsive">
+
+						<table class="table table-striped">
+							<tr>
+								<th>Číslo</th>
+								<th>Značka</th>
+								<th>Model</th>
+								<th>Barva</th>
+								<th>Výkon</th>
+							</tr>
+							<tr>
+								<td th:text="${autos.id}" />
+								<td th:text="${autos.make}" />
+								<td th:text="${autos.model}" />
+								<td th:text="${autos.colour}" />
+								<td th:text="${autos.power}" />
+							</tr>
+						</table>
+						<a th:href="@{/deleteConfirmed(Id=${autos.id})}"
+							class="btn btn-danger" style="float: right">Smazat</a>
+					</div>
+		</div>
+
+	</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+

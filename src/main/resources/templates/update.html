@@ -1,0 +1,71 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+
+	<head>
+		<meta http-equiv="Content-Type"
+			content="text/html; charset=UTF-8">
+			<title>Seznam Aut</title>
+			<link rel="stylesheet"
+				href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+				<link th:href="@{/css/bootstrap.css}" rel="stylesheet" />
+	</head>
+
+	<body>
+
+		<div class="container ">
+			<br>
+				<a href="list" class="btn btn-success">Zpět</a>
+				<br>
+					<h2>
+						<b>Upravit Auto</b>
+					</h2>
+
+					<form action="#" th:action="@{/uptAuto}" method="post"
+						th:object="${auto}">
+						<div class="form-group">
+							<label for="iD">Id:</label>
+							<input type="text" class="form-control" id="id" name="id"
+								th:field="*{id}" readonly>
+						</div>
+						<div class="form-group">
+							<label for="make">Značka:</label>
+							<input type="text" class="form-control" id="make"
+								name="make" th:field="*{make}">
+								<p class="alert alert-danger"
+									th:if="${#fields.hasErrors('make')}" th:errors="*{make}"></p>
+						</div>
+						<div class="form-group">
+							<label for="model">Model:</label>
+							<input type="text" class="form-control" id="model"
+								name="model" th:field="*{model}">
+								<p class="alert alert-danger"
+									th:if="${#fields.hasErrors('model')}" th:errors="*{model}"></p>
+						</div>
+						<div class="form-group">
+							<label for="colour">Barva:</label>
+							<input type="text" class="form-control" id="colour"
+								name="colour" th:field="*{colour}">
+								<p class="alert alert-danger"
+									th:if="${#fields.hasErrors('colour')}" th:errors="*{colour}"></p>
+						</div>
+						<div class="form-group">
+							<label for="colour">Výkon:</label>
+							<input type="text" class="form-control" id="power"
+								name="power" th:field="*{power}">
+								<p class="alert alert-danger"
+									th:if="${#fields.hasErrors('power')}" th:errors="*{power}"></p>
+						</div>
+
+						<button type="submit" class="btn btn-primary">
+							<span class="glyphicon glyphicon-ok-sign"></span>
+							<b> Potvrdit</b>
+						</button>
+					</form>
+		</div>
+
+	</body>
+
+</html>
+
+
