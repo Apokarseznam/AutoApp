@@ -21,3 +21,4 @@ Just need to execute:
 ```shell
 docker-compose up
 ```
+http://localhost:8088/list
