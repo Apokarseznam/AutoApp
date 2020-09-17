@@ -23,6 +23,11 @@ docker-compose up
 ```
 You can then access app here: http://localhost:8088/list
 
+The Database
+* Port: 3307 
+* Username: root 
+* Password: root 
+
 The app defines following CRUD APIs.
 
 | Method | Url |
