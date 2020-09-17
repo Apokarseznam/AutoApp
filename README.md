@@ -21,4 +21,4 @@ Just need to execute:
 ```shell
 docker-compose up
 ```
-You can then access AutoApp here:http://localhost:8088/list
+You can then access AutoApp here: http://localhost:8088/list
