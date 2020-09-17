@@ -25,9 +25,12 @@ You can then access app here: http://localhost:8088/list
 
 The app defines following CRUD APIs.
 
-| Command | Description |
+| Method | Url |
 | --- | --- |
-| git status | List all new or modified files |
-| git diff | Show file differences that haven't been staged |
+| GET | /api/autos/	 |
+| GET | /api/autos/	{autoId} |
+| POST | /api/autos/ |
+| PUT | /api/autos/{autoId} |
+| DELETE | /api/autos/{autoId} |
 
 
