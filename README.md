@@ -11,7 +11,7 @@ Java Spring MVC application.
 
 ### To get the code:
 ```shell
-$ git clone https://github.com/Apokarseznam/Auto.git
+$ git clone https://github.com/Apokarseznam/AutoApp.git
 ```
 ### License
 
