@@ -15,3 +15,7 @@ This is a Spring Boot Java app which connects to a MySQL instance running inside
 ```shell
 $ git clone https://github.com/Apokarseznam/AutoApp.git
 ```
+### Running the app with Docker:
+```shell
+docker-compose up
+```
