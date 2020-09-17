@@ -32,9 +32,9 @@ The app defines following CRUD APIs.
 
 | Method | Url |
 | --- | --- |
-| GET | /api/autos/	 |
+| GET | /api/autos	 |
 | GET | /api/autos/	{autoId} |
-| POST | /api/autos/ |
+| POST | /api/autos |
 | PUT | /api/autos/{autoId} |
 | DELETE | /api/autos/{autoId} |
 
