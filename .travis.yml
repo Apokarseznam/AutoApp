@@ -10,7 +10,7 @@ before_install:
  
 
 before_script:
-  - docker-compose up
+  - docker-compose up -t
 
 
 after_script:
