@@ -10,8 +10,12 @@ before_install:
  
 
 before_script:
-  - docker-compose up
+
+
+script:
+  
+  - docker-compose up -d
+  - docker-compose stop
 
 
 after_script:
-  - docker-compose down
