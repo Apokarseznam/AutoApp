@@ -3,7 +3,7 @@ os: linux
   
 dist: xenial
 
-sudo: required
+sudo: true
 
 services:
   - docker
