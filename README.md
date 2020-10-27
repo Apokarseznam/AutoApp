@@ -1,5 +1,7 @@
 # AutoApp
 
+[![Build Status](https://travis-ci.org/Apokarseznam/AutoApp.svg?branch=master)](https://travis-ci.org/Apokarseznam/AutoApp)
+
 This is a Spring Boot Java app which connects to a MySQL database running inside a Docker container.
 
 ### Technologies used:
