@@ -9,7 +9,7 @@ env:
 
 script:
   - docker-compose up -d
-  - curl -I http://localhost:8088/list
+  - netstat -tulpn
   - docker-compose stop
 
 
