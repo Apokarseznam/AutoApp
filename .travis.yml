@@ -9,7 +9,7 @@ env:
 
 script:
   - docker-compose up -d
-  - curl http://localhost:8088/list
+  - curl -I http://localhost:8088/list
   - docker-compose stop
 
 
