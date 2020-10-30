@@ -9,7 +9,6 @@ env:
 
 script:
   - docker-compose up -d
-  - netstat -tulpn
   - docker-compose stop
 
 
